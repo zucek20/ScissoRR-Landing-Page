@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,6 +22,10 @@ h5,
 h6 {
   font-family: "Libre Baskerville", serif;
   font-weight: normal;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 .width {
@@ -146,7 +151,7 @@ div#nav_menu.active {
 }
 
 header {
-  padding-top: 70px;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,12 +176,12 @@ header .heading {
 }
 
 header .heading h1 {
-  font-size: 70;
+  font-size: 60px;
   margin: 5px;
 }
 
 header .heading h1 span {
-  font-size: 90px;
+  font-size: 60px;
 }
 
 header .heading p {
@@ -202,7 +207,9 @@ header .heading button:hover {
 }
 
 header #head_img img {
+  width: 100%;
   max-width: 300px;
+  height: auto;
 }
 
 section#history {
@@ -217,10 +224,120 @@ section#history img#waves {
 
 section#history h2 {
   text-align: center;
-  font-size: 70px;
+  margin: 40px 5px;
 }
 
 section#history div.dashed {
   border-top: 3px dashed white;
   border-bottom: 3px dashed white;
+  position: relative;
+}
+
+section#history div.dashed h3 {
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+
+section#history div.dashed p {
+  margin: 0 20px 30px 20px;
+}
+
+section#history div.dashed::before {
+  content: url("../img/scissor_icon_white.png");
+  position: absolute;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  top: -70px;
+}
+
+section#history div.blue {
+  height: 30px;
+  background-color: #0085ff;
+}
+
+section#history img#cut {
+  width: 100%;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+section#infographic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#infographic h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+section#infographic img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+section#cut div.heading {
+  background-color: #c4c4c4;
+  text-align: center;
+}
+
+section#cut div.heading h2 {
+  padding: 50px 0;
+}
+
+section#cut div.heading p {
+  padding-bottom: 40px;
+  margin: 0 5px;
+}
+
+section#cut .content {
+  background-color: #0085ff;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#cut .content h2 {
+  opacity: .5;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 5px;
+  grid-area: "header";
+}
+
+section#cut .content figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  margin-top: 30px;
+}
+
+section#cut .content figure figcaption {
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+section#cut .content figure.wires {
+  padding-bottom: 50px;
 }

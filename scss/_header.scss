@@ -1,47 +1,48 @@
 header {
-   padding-top: 70px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-   .heading {
-      margin: 30px auto 0;
-      display: flex;
-      flex-direction: column;
+  .heading {
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
 
-      h1 {
-         font-size: 70;
-         margin: 5px;
-         span {
-            font-size: 90px;
-         }
+    h1 {
+      font-size: 60px;
+      margin: 5px;
+      span {
+        font-size: 60px;
       }
+    }
 
-      p {
-         border-top: 1px solid black;
-         margin: 10px;
-         padding-top: 5px;
+    p {
+      border-top: 1px solid black;
+      margin: 10px;
+      padding-top: 5px;
+    }
+
+    button {
+      align-self: center;
+      font-size: 25px;
+      background-color: $lightBlue;
+      border: none;
+      color: white;
+      padding: 5px 20px;
+      margin: 30px 0;
+
+      &:hover {
+        cursor: pointer;
       }
+    }
+  }
 
-      button {
-         align-self: center;
-         font-size: 25px;
-         background-color: $lightBlue;
-         border: none;
-         color: white;
-         padding: 5px 20px;
-         margin: 30px 0;
-
-         &:hover {
-            cursor: pointer;
-         }
-      }
-   }
-
-   #head_img {
-      
-      img {
-         max-width: 300px;
-      }
-   }
+  #head_img {
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
 }

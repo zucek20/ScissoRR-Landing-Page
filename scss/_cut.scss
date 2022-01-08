@@ -1,0 +1,49 @@
+section#cut {
+
+  div.heading {
+    background-color: $lightGray;
+    text-align: center;
+
+    h2 {
+      padding: 50px 0;
+    }
+
+    p {
+      padding-bottom: 40px;
+      margin: 0 5px;
+    }
+  }
+
+  .content {
+    background-color: $lightBlue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    h2 {
+      opacity: .5;
+      font-size: 50px;
+      text-align: center;
+      padding: 20px 5px;
+      grid-area: "header";
+    }
+    
+    figure {
+      display: flex;
+      align-items: center;
+      width: 250px;
+      margin-top: 30px;
+
+      figcaption {
+        font-size: 25px;
+        padding-left: 20px;
+      }
+    }
+
+    figure.wires {
+      padding-bottom: 50px;
+    }
+  }
+}
