@@ -1,0 +1,21 @@
+section#history {
+  color: white;
+  background-color: $lightBlue;
+
+  img#waves {
+    width: 100%;
+    background-color: white;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 70px;
+  }
+
+  div.dashed {
+    border-top: 3px dashed white;
+    border-bottom: 3px dashed white;
+  }
+
+  
+}

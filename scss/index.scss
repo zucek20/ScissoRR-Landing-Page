@@ -1,0 +1,49 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// style standardisation
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+}
+
+.width {
+  max-width: 1300px;
+}
+
+button {
+  border-radius: 30px;
+}
+
+// variables
+$lightBlue: #0085ff;
+$darkBlue: #004cbe;
+$lightGray: #c4c4c4;
+
+// imported styles from other sections and media queries
+@import "_navigation";
+@import "_header";
+@import "_history";
+@import "_info"; // infographic and pros
+@import "_offer";
+@import "_footer";
+@import "_media"; // media queries

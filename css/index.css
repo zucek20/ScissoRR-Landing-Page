@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+}
+
+.width {
+  max-width: 1300px;
+}
+
+button {
+  border-radius: 30px;
+}
+
+nav {
+  background-color: #004cbe;
+  color: white;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.514);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+nav div.width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+}
+
+nav div.width a {
+  text-decoration: none;
+  color: white;
+  font-size: 44px;
+  font-family: 'Libre Baskerville', sans-serif;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+nav div.width a:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+nav div.width button#nav_buy {
+  font-size: 22px;
+  padding: 0 10px;
+  margin: 10px;
+  background-color: #004cbe;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  display: none;
+}
+
+nav div.width button#nav_buy:hover {
+  cursor: pointer;
+  background-color: #0085ff;
+}
+
+nav div.width button#nav_menu_button {
+  border: 3px solid white;
+  border-radius: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: #004cbe;
+  margin: 3px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav div.width button#nav_menu_button:hover {
+  background-color: #0085ff;
+  cursor: pointer;
+}
+
+nav div.width button#nav_menu_button.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+nav div.width i.fa-chevron-down {
+  font-size: 35px;
+  line-height: 44px;
+  color: white;
+}
+
+div#nav_menu {
+  position: fixed;
+  background-color: #004cbe;
+  width: 100%;
+  z-index: 1;
+  margin-top: -10px;
+  top: -300px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+div#nav_menu ul {
+  list-style: none;
+  padding: 20px;
+  text-align: end;
+  margin-right: 10px;
+}
+
+div#nav_menu ul a {
+  text-decoration: none;
+  color: white;
+}
+
+div#nav_menu ul a li {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+div#nav_menu ul a li:hover {
+  text-decoration: underline;
+}
+
+div#nav_menu.active {
+  top: 70px;
+}
+
+header {
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .heading {
+  margin: 30px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .heading h1 {
+  font-size: 70;
+  margin: 5px;
+}
+
+header .heading h1 span {
+  font-size: 90px;
+}
+
+header .heading p {
+  border-top: 1px solid black;
+  margin: 10px;
+  padding-top: 5px;
+}
+
+header .heading button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 25px;
+  background-color: #0085ff;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  margin: 30px 0;
+}
+
+header .heading button:hover {
+  cursor: pointer;
+}
+
+header #head_img img {
+  max-width: 300px;
+}
+
+section#history {
+  color: white;
+  background-color: #0085ff;
+}
+
+section#history img#waves {
+  width: 100%;
+  background-color: white;
+}
+
+section#history h2 {
+  text-align: center;
+  font-size: 70px;
+}
+
+section#history div.dashed {
+  border-top: 3px dashed white;
+  border-bottom: 3px dashed white;
+}
