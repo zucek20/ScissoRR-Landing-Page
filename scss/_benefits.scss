@@ -1,4 +1,5 @@
-section#cut {
+section#benefits {
+
   div.heading {
     background-color: $lightGray;
     text-align: center;
@@ -15,14 +16,14 @@ section#cut {
   }
 
   .content {
-    background-color: $lightBlue;
+    background-color: $darkBlue;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h2 {
-      opacity: 0.5;
+      opacity: .5;
       font-size: 50px;
       text-align: center;
       padding: 20px 5px;
@@ -31,17 +32,20 @@ section#cut {
     figure {
       display: flex;
       align-items: center;
-      width: 250px;
       margin-top: 30px;
+
+      img {
+        width: 115px;
+      }
 
       figcaption {
         font-size: 25px;
         padding-left: 20px;
       }
-    }
 
-    figure.wires {
-      padding-bottom: 50px;
+      &:last-child {
+        margin-bottom: 50px;
+      }
     }
   }
 }

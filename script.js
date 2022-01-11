@@ -5,3 +5,8 @@ btn.addEventListener('click', function() {
    btn.classList.toggle('active')
    menu.classList.toggle('active')
 })
+
+
+document.querySelector('#submit').addEventListener("click", function(e) {
+  e.preventDefault()
+})

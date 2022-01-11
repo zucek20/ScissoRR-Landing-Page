@@ -200,10 +200,15 @@ header .heading button {
   color: white;
   padding: 5px 20px;
   margin: 30px 0;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 header .heading button:hover {
   cursor: pointer;
+  background-color: #004cbe;
 }
 
 header #head_img img {
@@ -219,7 +224,7 @@ section#history {
 
 section#history img#waves {
   width: 100%;
-  background-color: white;
+  background-color: #fff;
 }
 
 section#history h2 {
@@ -228,8 +233,8 @@ section#history h2 {
 }
 
 section#history div.dashed {
-  border-top: 3px dashed white;
-  border-bottom: 3px dashed white;
+  border-top: 5px dashed white;
+  border-bottom: 5px dashed white;
   position: relative;
 }
 
@@ -239,7 +244,9 @@ section#history div.dashed h3 {
 }
 
 section#history div.dashed p {
-  margin: 0 20px 30px 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 0 20px;
 }
 
 section#history div.dashed::before {
@@ -296,7 +303,8 @@ section#cut div.heading h2 {
 
 section#cut div.heading p {
   padding-bottom: 40px;
-  margin: 0 5px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 section#cut .content {
@@ -315,11 +323,10 @@ section#cut .content {
 }
 
 section#cut .content h2 {
-  opacity: .5;
+  opacity: 0.5;
   font-size: 50px;
   text-align: center;
   padding: 20px 5px;
-  grid-area: "header";
 }
 
 section#cut .content figure {
@@ -340,4 +347,297 @@ section#cut .content figure figcaption {
 
 section#cut .content figure.wires {
   padding-bottom: 50px;
+}
+
+section#benefits div.heading {
+  background-color: #c4c4c4;
+  text-align: center;
+}
+
+section#benefits div.heading h2 {
+  padding: 50px 0;
+}
+
+section#benefits div.heading p {
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+section#benefits .content {
+  background-color: #004cbe;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#benefits .content h2 {
+  opacity: .5;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 5px;
+}
+
+section#benefits .content figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+section#benefits .content figure img {
+  width: 115px;
+}
+
+section#benefits .content figure figcaption {
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+section#benefits .content figure:last-child {
+  margin-bottom: 50px;
+}
+
+section#offer div.heading {
+  text-align: center;
+}
+
+section#offer div.heading h2 {
+  padding: 50px 0;
+}
+
+section#offer div.heading p {
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+section#offer .offer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#offer .offer-wrap .bundle {
+  border-top: 5px dashed black;
+  border-bottom: 5px dashed black;
+  background-color: #ddd;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+section#offer .offer-wrap .bundle:last-child {
+  background-color: #0085ff;
+  color: white;
+  border-top: 5px dashed #004cbe;
+  border-bottom: 5px dashed #004cbe;
+}
+
+section#offer .offer-wrap .bundle:last-child p.price {
+  text-decoration: underline;
+}
+
+section#offer .offer-wrap .bundle:last-child::before {
+  content: url("../img/scissor-icon_blue.png");
+}
+
+section#offer .offer-wrap .bundle:last-child button {
+  color: black;
+  background-color: white;
+}
+
+section#offer .offer-wrap .bundle:last-child button:hover {
+  background-color: #c4c4c4;
+}
+
+section#offer .offer-wrap .bundle::before {
+  content: url("../img/scissor-icon.png");
+  position: absolute;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  top: -70px;
+}
+
+section#offer .offer-wrap .bundle h3 {
+  font-family: "PT sans", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 50px 30px 15px 30px;
+}
+
+section#offer .offer-wrap .bundle p.price {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+section#offer .offer-wrap .bundle li {
+  padding: 5px;
+}
+
+section#offer .offer-wrap .bundle li::before {
+  content: "- ";
+}
+
+section#offer .offer-wrap .bundle button {
+  width: 220px;
+  height: 46px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 26px;
+  background-color: #0085ff;
+  color: white;
+  border: none;
+  margin: 50px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section#offer .offer-wrap .bundle button:hover {
+  background-color: #004cbe;
+  cursor: pointer;
+}
+
+section#contact {
+  text-align: center;
+}
+
+section#contact h2 {
+  margin-bottom: 30px;
+}
+
+section#contact p {
+  margin-bottom: 30px;
+}
+
+section#contact div.contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#contact div.contact-wrap form label {
+  display: block;
+  text-align: left;
+  margin-left: 15px;
+}
+
+section#contact div.contact-wrap form input,
+section#contact div.contact-wrap form textarea {
+  display: block;
+  width: 90vw;
+  margin: 5px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+section#contact div.contact-wrap form textarea {
+  height: 200px;
+  resize: none;
+}
+
+section#contact div.contact-wrap form button#submit {
+  font-size: 25px;
+  background-color: #0085ff;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  margin: 30px 0;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+section#contact div.contact-wrap form button#submit:hover {
+  cursor: pointer;
+  background-color: #004cbe;
+}
+
+section#contact div.contact-wrap img {
+  display: none;
+}
+
+footer {
+  background-color: #3c3c3c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+}
+
+footer div {
+  margin-bottom: 30px;
+}
+
+footer .nav {
+  margin-left: 25px;
+}
+
+footer .nav a {
+  font-family: "libre baskerville", serif;
+  color: whitesmoke;
+  font-size: 44px;
+  text-decoration: none;
+}
+
+footer .nav ul {
+  list-style: none;
+}
+
+footer .nav ul a {
+  text-decoration: underline;
+  font-size: 18px;
+  font-family: "pt sans", sans-serif;
+  color: #a5a5a5;
+}
+
+footer .nav ul a:hover {
+  color: #0085ff;
+}
+
+footer .nav ul a li {
+  margin-top: 5px;
+}
+
+footer .copytight {
+  margin-bottom: 0;
 }

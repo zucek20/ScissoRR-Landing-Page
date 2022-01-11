@@ -1,0 +1,103 @@
+section#offer {
+  div.heading {
+    text-align: center;
+
+    h2 {
+      padding: 50px 0;
+    }
+
+    p {
+      padding-bottom: 40px;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+  .offer-wrap {
+    display: flex;
+    flex-direction: column;
+
+    .bundle {
+
+      border-top: 5px dashed black;
+      border-bottom: 5px dashed black;
+      background-color: #ddd;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 90px;
+
+      &:last-child {
+        background-color: $lightBlue;
+        color: white;
+        border-top: 5px dashed $darkBlue;
+        border-bottom: 5px dashed $darkBlue;
+
+        p.price {
+          text-decoration: underline;
+        }
+
+        &::before {
+          content: url("../img/scissor-icon_blue.png");
+
+        }
+
+        button {
+          color: black;
+          background-color: white;
+
+          &:hover {
+            background-color: $lightGray;
+          }
+        }
+      }
+
+      &::before {
+        content: url("../img/scissor-icon.png");
+        position: absolute;
+        transform: scale(0.4);
+        top: -70px;
+      }
+
+      h3 {
+        font-family: "PT sans", sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        margin: 50px 30px 15px 30px;
+      }
+
+      p.price {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      li {
+        padding: 5px;
+      }
+
+      li::before {
+        content: "- ";
+      }
+
+      button {
+        width: 220px;
+        height: 46px;
+        align-self: center;
+        font-size: 26px;
+        background-color: $lightBlue;
+        color: white;
+        border: none;
+        margin: 50px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .6);
+        transition: .2s;
+
+        &:hover {
+          background-color: $darkBlue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+section#contact {
+  text-align: center;
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  div.contact-wrap {
+    display: flex;
+    flex-direction: column;
+
+    form {
+      label {
+        display: block;
+        text-align: left;
+        margin-left: 15px;
+      }
+
+      input,
+      textarea {
+        display: block;
+        width: 90vw;
+        margin: 5px auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 18px;
+      }
+
+      textarea {
+        height: 200px;
+        resize: none;
+      }
+
+      button#submit {
+        font-size: 25px;
+        background-color: $lightBlue;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        margin: 30px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        transition: 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $darkBlue;
+        }
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+}

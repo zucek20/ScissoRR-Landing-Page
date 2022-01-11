@@ -1,0 +1,52 @@
+footer {
+  background-color: #3c3c3c;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+
+  div {
+    margin-bottom: 30px;
+  }
+
+  .nav {
+    margin-left: 25px;
+
+    a {
+      font-family: "libre baskerville", serif;
+      color: whitesmoke;
+      font-size: 44px;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+
+      a {
+        text-decoration: underline;
+        font-size: 18px;
+        font-family: "pt sans", sans-serif;
+        color: rgb(165, 165, 165);
+
+        &:hover {
+          color: $lightBlue;
+        }
+
+        li {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .media {
+
+  }
+
+  .newsletter {
+
+  }
+
+  .copytight {
+    margin-bottom: 0;
+  }
+}

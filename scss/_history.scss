@@ -4,7 +4,7 @@ section#history {
 
   img#waves {
     width: 100%;
-    background-color: white;
+    background-color: #fff;
   }
 
   h2 {
@@ -13,8 +13,8 @@ section#history {
   }
 
   div.dashed {
-    border-top: 3px dashed white;
-    border-bottom: 3px dashed white;
+    border-top: 5px dashed white;
+    border-bottom: 5px dashed white;
     position: relative;
 
     h3 {
@@ -23,7 +23,9 @@ section#history {
     }
 
     p {
-      margin: 0 20px 30px 20px;
+      margin: 30px auto;
+      max-width: 500px;
+      padding: 0 20px;
     }
 
     &::before{
