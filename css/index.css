@@ -34,6 +34,8 @@ h2 {
 
 button {
   border-radius: 30px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 600;
 }
 
 nav {
@@ -638,6 +640,105 @@ footer .nav ul a li {
   margin-top: 5px;
 }
 
-footer .copytight {
+footer .media {
+  color: white;
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+footer .media p {
+  text-align: center;
+}
+
+footer .media figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .media figure img {
+  width: 50px;
+}
+
+footer .media figure img:hover {
+  -webkit-filter: invert(38%) sepia(35%) saturate(5199%) hue-rotate(193deg) brightness(100%) contrast(108%);
+          filter: invert(38%) sepia(35%) saturate(5199%) hue-rotate(193deg) brightness(100%) contrast(108%);
+  cursor: pointer;
+}
+
+footer .newsletter {
+  background-color: #0085ff;
+  border-top: 3px dashed white;
+  border-bottom: 3px dashed white;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .newsletter h3 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+footer .newsletter h3,
+footer .newsletter p {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+footer .newsletter input {
+  background: #2c2c2c;
+  border: 2px solid #000000;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 15px;
+  color: white;
+}
+
+footer .newsletter input:focus {
+  outline: 2px solid white;
+}
+
+footer .newsletter button {
+  font-size: 25px;
+  background-color: white;
+  border: none;
+  color: #0085ff;
+  padding: 5px 20px;
+  margin: 20px 0;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-weight: 600;
+}
+
+footer .newsletter button:hover {
+  cursor: pointer;
+  background-color: #c4c4c4;
+}
+
+footer .copyright {
   margin-bottom: 0;
+  background-color: #004cbe;
+  color: #5C9DFF;
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
 }
