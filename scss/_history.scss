@@ -7,32 +7,36 @@ section#history {
     background-color: #fff;
   }
 
-  h2 {
-    text-align: center;
-    margin: 40px 5px;
-  }
+  article {
 
-  div.dashed {
-    border-top: 5px dashed white;
-    border-bottom: 5px dashed white;
-    position: relative;
-
-    h3 {
+    h2 {
       text-align: center;
-      margin: 40px 0 30px 0;
+      margin: 40px 5px;
     }
 
-    p {
-      margin: 30px auto;
-      max-width: 500px;
-      padding: 0 20px;
-    }
+    div.dashed {
+      border: 5px dashed white;
+      width: 101%;
+      transform: translateX(-5px);
+      position: relative;
 
-    &::before{
-      content: url("../img/scissor_icon_white.png");
-      position: absolute;
-      transform: scale(0.4);
-      top: -70px;
+      h3 {
+        text-align: center;
+        margin: 40px 0 30px 0;
+      }
+
+      p {
+        margin: 30px auto;
+        max-width: 500px;
+        padding: 0 20px;
+      }
+
+      &::before {
+        content: url("../img/scissor_icon_white.png");
+        position: absolute;
+        transform: scale(0.4);
+        top: -70px;
+      }
     }
   }
 

@@ -24,8 +24,10 @@
     <nav>
       <div class="width">
         <a href="#header">scissoRR</a>
-        <button id="nav_buy">Buy now</button>
-        <button id="nav_menu_button"><i class="fas fa-chevron-down"></i></button>
+        <div>
+          <button id="nav_buy">Buy now</button>
+          <button id="nav_menu_button"><i class="fas fa-chevron-down"></i></button>
+        </div>
       </div>
     </nav>
     <div id="nav_menu" class="">
@@ -39,8 +41,8 @@
       </ul>
     </div>
 
-    <header>
-      <div id="header" class="heading">
+    <header class="width">
+      <div class="heading">
         <h1><span>Scissors</span><br />like no others</h1>
         <p>Satisfy your curiosity about many topics related to scissors.</p>
         <button>Learn more</button>
@@ -52,24 +54,27 @@
 
     <section id="history">
       <img id="waves" src="img/waves.png" alt="waves" />
-      <h2>History of Scissors</h2>
-      <div class="dashed">
-        <h3>Long ago...</h3>
-        <p>
-          The earliest known scissors appeared in Mesopotamia 3,000 years ago. These were of the 'spring scissor' type
-          comprising two bronze blades connected at the handles by a thin, flexible strip of curved bronze which served
-          to hold the blades in alignment, to allow them to be squeezed together, and to pull them apart when released.
-          Pivoted scissors were invented by Romans in 100 AD. This invention is used nowadays to cut many materials and
-          it is not going anywhere.
-        </p>
-      </div>
+      <article class="width">
+        <h2>History of Scissors</h2>
+        <div class="dashed">
+          <h3>Long ago...</h3>
+          <p>
+            The earliest known scissors appeared in Mesopotamia 3,000 years ago. These were of the 'spring scissor' type
+            comprising two bronze blades connected at the handles by a thin, flexible strip of curved bronze which
+            served to hold the blades in alignment, to allow them to be squeezed together, and to pull them apart when
+            released. Pivoted scissors were invented by Romans in 100 AD. This invention is used nowadays to cut many
+            materials and it is not going anywhere.
+          </p>
+        </div>
+      </article>
       <div class="blue"></div>
       <img id="cut" src="img/cut.png" alt="cut" />
     </section>
 
     <section id="infographic">
       <h2>Meet our product</h2>
-      <img src="img/info_responsive.png" alt="infographic" />
+      <img src="img/info_responsive.png" alt="infographic" id="info1" />
+      <img src="img/info_desktop.png" alt="infographic" id="info2" />
     </section>
 
     <section id="cut">
@@ -82,35 +87,40 @@
       </div>
       <div class="content">
         <h2>You can cut through</h2>
-        <figure class="paper">
-          <img src="img/paper.png" alt="paper icon" />
-          <figcaption>Paper</figcaption>
-        </figure>
+        <div class="figures">
+          <div>
+            <figure class="paper">
+              <img src="img/paper.png" alt="paper icon" />
+              <figcaption>Paper</figcaption>
+            </figure>
 
-        <figure class="cardboard">
-          <img src="img/cardboard.png" alt="cardboard icon" />
-          <figcaption>Cardboard</figcaption>
-        </figure>
+            <figure class="cardboard">
+              <img src="img/cardboard.png" alt="cardboard icon" />
+              <figcaption>Cardboard</figcaption>
+            </figure>
 
-        <figure class="cloth">
-          <img src="img/cloth.png" alt="cloth icon" />
-          <figcaption>Cloth</figcaption>
-        </figure>
+            <figure class="cloth">
+              <img src="img/cloth.png" alt="cloth icon" />
+              <figcaption>Cloth</figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="metal-foil">
+              <img src="img/foil.png" alt="metal foil icon" />
+              <figcaption>Metal foil</figcaption>
+            </figure>
 
-        <figure class="metal-foil">
-          <img src="img/foil.png" alt="metal foil icon" />
-          <figcaption>Metal foil</figcaption>
-        </figure>
+            <figure class="rope">
+              <img src="img/rope.png" alt="rope icon" />
+              <figcaption>Rope</figcaption>
+            </figure>
 
-        <figure class="rope">
-          <img src="img/rope.png" alt="rope icon" />
-          <figcaption>Rope</figcaption>
-        </figure>
-
-        <figure class="wires">
-          <img src="img/wire.png" alt="wire icon" />
-          <figcaption>Wires</figcaption>
-        </figure>
+            <figure class="wires">
+              <img src="img/wire.png" alt="wire icon" />
+              <figcaption>Wires</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -141,7 +151,7 @@
         <h2>Our offer</h2>
         <p>Check out what we prepared for you!</p>
       </div>
-      <div class="offer-wrap">
+      <div class="offer-wrap width">
         <div class="bundle">
           <h3>Basic scissoRR kit</h3>
           <p class="price">$4,99</p>
@@ -183,7 +193,7 @@
         Do you want to ask us about something? Have a concern?<br />
         Leave us a message below!
       </p>
-      <div class="contact-wrap">
+      <div class="contact-wrap width">
         <form>
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" />
@@ -212,21 +222,19 @@
       <div class="media">
         <p>Check out our social media</p>
         <figure>
-          <img src="img/facebook.png" alt="facebook">
-          <img src="img/twitter.png" alt="twitter">
-          <img src="img/instagram.png" alt="instagram">
+          <img src="img/facebook.png" alt="facebook" />
+          <img src="img/twitter.png" alt="twitter" />
+          <img src="img/instagram.png" alt="instagram" />
         </figure>
       </div>
       <div class="newsletter">
         <h3>Sign up to our newsletter</h3>
         <p>and get a 20% discount now!</p>
-        <input type="email" placeholder="Your e-mail">
+        <input type="email" placeholder="Your e-mail" />
         <button>Sign Up</button>
       </div>
-      <div class="copyright">
-        &copy; Paweł Izdebski 2022
-      </div>
     </footer>
+    <div class="copyright">&copy; Paweł Izdebski 2022</div>
 
     <script src="script.js"></script>
   </body>

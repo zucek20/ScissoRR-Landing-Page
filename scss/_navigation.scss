@@ -1,105 +1,108 @@
 nav {
-   background-color: $darkBlue;
-   color: white;
-   height: 60px;
-   position: fixed;
-   width: 100%;
-   z-index: 2;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.514);
+  background-color: $darkBlue;
+  color: white;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.514);
 
-   div.width {
-      display: flex;
-      justify-content: space-between;
-      margin: 5px;
+  div.width {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
 
-      a {
-         text-decoration: none;
-         color: white;
-         font-size: 44px;
-         font-family: 'Libre Baskerville', sans-serif;
-         line-height: 60px;
-         margin-left: 10px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 44px;
+      font-family: "Libre Baskerville", sans-serif;
+      line-height: 60px;
+      margin-left: 10px;
 
-         &:hover {
-            cursor: pointer;
-            opacity: .8;
-         }
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+
+    button#nav_buy {
+      font-size: 22px;
+      // padding: 0 10px;
+      box-sizing: border-box;
+      width: 150px;
+      height: 40px;
+      margin: 10px;
+      transform: translateY(-8px);
+      background-color: $darkBlue;
+      border: 3px solid white;
+      color: white;
+      font-weight: bold;
+      display: none;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $lightBlue;
+      }
+    }
+
+    button#nav_menu_button {
+      border: 3px solid white;
+      border-radius: 30px;
+      width: 45px;
+      height: 45px;
+      background-color: $darkBlue;
+      margin: 3px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $lightBlue;
+        cursor: pointer;
       }
 
-      button#nav_buy {
-         font-size: 22px;
-         padding: 0 10px;
-         margin: 10px;
-         background-color: $darkBlue;
-         border: 3px solid white;
-         color: white;
-         font-weight: bold;
-         display: none;
-
-         &:hover {
-            cursor: pointer;
-            background-color: $lightBlue;
-         }
+      &.active {
+        transform: rotate(180deg);
       }
-
-      button#nav_menu_button {
-         border: 3px solid white;
-         border-radius: 30px;
-         width: 45px;
-         height: 45px;
-         background-color: $darkBlue;
-         margin: 3px;
-         transition: .3s;
-
-         &:hover {
-            background-color: $lightBlue;
-            cursor: pointer;
-         }
-
-         &.active {
-            transform: rotate(180deg);
-         }
-      }
-      i.fa-chevron-down {
-         font-size: 35px;
-         line-height: 44px;
-         color: white;
-      }
-   }
+    }
+    i.fa-chevron-down {
+      font-size: 35px;
+      line-height: 44px;
+      color: white;
+    }
+  }
 }
 
 div#nav_menu {
-   position: fixed;
-   background-color: $darkBlue;
-   width: 100%;
-   z-index: 1;
-   margin-top: -10px;
-   top: -300px;
-   transition: .3s;
+  position: fixed;
+  background-color: $darkBlue;
+  width: 100%;
+  z-index: 1;
+  margin-top: -10px;
+  top: -300px;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.507);
 
+  ul {
+    list-style: none;
+    padding: 20px;
+    text-align: end;
+    margin-right: 10px;
+    a {
+      text-decoration: none;
+      color: white;
 
-   ul {
-      list-style: none;
-      padding: 20px;
-      text-align: end;
-      margin-right: 10px;
-      a {
-         text-decoration: none;
-         color: white;
+      li {
+        margin-bottom: 20px;
+        font-size: 25px;
 
-         li {
-            margin-bottom: 20px;
-            font-size: 25px;
-            
-            &:hover {
-               text-decoration: underline;
-            }
-         }
+        &:hover {
+          text-decoration: underline;
+        }
       }
-   }
+    }
+  }
 
-   &.active {
-      top: 70px;
-   }
+  &.active {
+    top: 70px;
+  }
 }
-

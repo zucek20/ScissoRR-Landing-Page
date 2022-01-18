@@ -13,19 +13,19 @@ section#contact {
     flex-direction: column;
 
     form {
+
       label {
         display: block;
         text-align: left;
-        margin-left: 15px;
+        margin-left: calc(4vw);
       }
 
       input,
       textarea {
         display: block;
-        width: 90vw;
+        width: 90%;
         margin: 5px auto;
         border: 2px solid black;
-        border-radius: 10px;
         padding: 5px;
         font-size: 18px;
       }
