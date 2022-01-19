@@ -19,6 +19,7 @@ nav {
       font-family: "Libre Baskerville", sans-serif;
       line-height: 60px;
       margin-left: 10px;
+      transition: .2s;
 
       &:hover {
         cursor: pointer;
@@ -53,6 +54,8 @@ nav {
       height: 45px;
       background-color: $darkBlue;
       margin: 3px;
+      margin-right: 18px;
+
       transition: 0.3s;
 
       &:hover {

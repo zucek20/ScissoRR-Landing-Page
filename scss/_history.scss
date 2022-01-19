@@ -15,8 +15,9 @@ section#history {
     }
 
     div.dashed {
-      border: 5px dashed white;
-      width: 101%;
+      border-top: 5px dashed white;
+      border-bottom: 5px dashed white;
+      width: 100%;
       transform: translateX(-5px);
       position: relative;
 
@@ -45,7 +46,7 @@ section#history {
     background-color: $lightBlue;
   }
 
-  img#cut {
+  img#cut-img {
     width: 100%;
     transform: translateY(10px);
   }

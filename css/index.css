@@ -76,6 +76,8 @@ nav div.width a {
   font-family: "Libre Baskerville", sans-serif;
   line-height: 60px;
   margin-left: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 nav div.width a:hover {
@@ -111,6 +113,7 @@ nav div.width button#nav_menu_button {
   height: 45px;
   background-color: #004cbe;
   margin: 3px;
+  margin-right: 18px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -252,8 +255,9 @@ section#history article h2 {
 }
 
 section#history article div.dashed {
-  border: 5px dashed white;
-  width: 101%;
+  border-top: 5px dashed white;
+  border-bottom: 5px dashed white;
+  width: 100%;
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
   position: relative;
@@ -283,7 +287,7 @@ section#history div.blue {
   background-color: #0085ff;
 }
 
-section#history img#cut {
+section#history img#cut-img {
   width: 100%;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
@@ -581,6 +585,7 @@ section#contact div.contact-wrap form label {
   display: block;
   text-align: left;
   margin-left: calc(4vw);
+  margin-top: 20px;
 }
 
 section#contact div.contact-wrap form input,
@@ -589,7 +594,7 @@ section#contact div.contact-wrap form textarea {
   width: 90%;
   margin: 5px auto;
   border: 2px solid black;
-  padding: 5px;
+  padding: 10px;
   font-size: 18px;
 }
 
@@ -636,7 +641,7 @@ footer {
 }
 
 footer div {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 footer .nav a {
@@ -711,6 +716,7 @@ footer .newsletter {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 footer .newsletter h3 {
@@ -810,6 +816,7 @@ footer .newsletter button:hover {
     width: 600px;
     border-radius: 50px;
     margin: 70px 20px;
+    border: 5px dashed white;
   }
   section#infographic h2 {
     margin-top: 50px;
@@ -881,9 +888,8 @@ footer .newsletter button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   section#offer div.offer-wrap div.bundle {
     border: 5px dashed black;
@@ -917,6 +923,7 @@ footer .newsletter button:hover {
   }
   section#contact div.contact-wrap form label {
     margin: 10px 30px;
+    margin-top: 20px;
   }
   section#contact div.contact-wrap img {
     display: block;
@@ -931,7 +938,7 @@ footer .newsletter button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 70px;
-    padding: 30px 20px;
+    padding: 50px 20px;
   }
   footer div.nav {
     width: 200px;
@@ -946,5 +953,6 @@ footer .newsletter button:hover {
     border: 5px dashed white;
     border-radius: 50px;
     padding: 10px 30px;
+    width: auto;
   }
 }
