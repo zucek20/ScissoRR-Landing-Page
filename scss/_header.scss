@@ -3,6 +3,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 100px;
 
   .heading {
     margin: 30px auto 0;
@@ -42,6 +43,7 @@ header {
   }
 
   #head_img {
+    padding-right: 50px;
     img {
       width: 100%;
       max-width: 300px;

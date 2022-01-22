@@ -184,6 +184,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 100px;
 }
 
 header .heading {
@@ -233,6 +234,10 @@ header .heading button:hover {
   background-color: #004cbe;
 }
 
+header #head_img {
+  padding-right: 50px;
+}
+
 header #head_img img {
   width: 100%;
   max-width: 300px;
@@ -280,11 +285,6 @@ section#history article div.dashed::before {
   -webkit-transform: scale(0.4);
           transform: scale(0.4);
   top: -70px;
-}
-
-section#history div.blue {
-  height: 30px;
-  background-color: #0085ff;
 }
 
 section#history img#cut-img {
@@ -443,7 +443,7 @@ section#offer div.heading {
 }
 
 section#offer div.heading h2 {
-  padding: 50px 0;
+  padding: 50px 0 30px;
 }
 
 section#offer div.heading p {
@@ -793,7 +793,7 @@ footer .newsletter button:hover {
     font-size: 120px;
   }
   header div#head_img {
-    padding: 30px;
+    padding-top: 40px;
   }
   header div#head_img img {
     max-width: 430px;
