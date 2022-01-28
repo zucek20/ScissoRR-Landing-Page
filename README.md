@@ -1,7 +1,7 @@
 # ScissoRR Landing Page
 This is my project of Landing Page for fake scissors product and contains my own design. The purpose of the site is promoting product and encourage user to buy a product. 💸
 
-Page have 7 different sections, navigation, RWD and various means of product-promotion content.
+Page have 7 different sections, navigation, RWD, "mobile first" principle and various means of product-promotion content.
 
 ## Usage
 
