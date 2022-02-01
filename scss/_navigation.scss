@@ -81,7 +81,7 @@ div#nav_menu {
   width: 100%;
   z-index: 1;
   margin-top: -10px;
-  top: -300px;
+  top: -320px;
   transition: 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.507);
 
@@ -93,9 +93,10 @@ div#nav_menu {
     a {
       text-decoration: none;
       color: white;
-
+      
       li {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        text-align: center;
         font-size: 25px;
 
         &:hover {

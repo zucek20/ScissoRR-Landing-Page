@@ -20,17 +20,32 @@
     right: 0;
     border-radius: 10px;
     transform: translate(-10px, 10px);
+    ul {
+      a {
+        li {
+          text-align: end;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    
   }
 
   // Header
   header {
     flex-direction: row;
+    gap: 100px;
+
 
     .heading {
       h1 {
         span {
           font-size: 120px;
         }
+      }
+
+      button {
+        margin-top: 60px;
       }
     }
 
